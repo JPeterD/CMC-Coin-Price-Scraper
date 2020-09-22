@@ -5,7 +5,7 @@ coin = raw_input('What coin price are you looking for?\n')
 
 url = 'https://coinmarketcap.com/currencies/'
 
-final_url = ''.join([url, coin])
+final_url = ''.join([url, coin.lower()])
 
 page = urllib2.urlopen(final_url)
 
